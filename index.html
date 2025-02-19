@@ -3,116 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ArbitrageX - Ad, Traffic & Search Arbitrage</title>
+  <title>AI Arbitrage Pro</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Animate.css for smooth animations -->
+  <!-- Optionally include Animate.css for extra animation effects -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-overlay">
-      <h1 class="hero-title animate__animated animate__fadeInDown">ArbitrageX</h1>
-      <p class="hero-tagline animate__animated animate__fadeInUp">
-        Unlock the power of ad, traffic & search arbitrage with data-driven automation.
-      </p>
-      <a href="#about" class="btn hero-btn animate__animated animate__fadeInUp">Learn More</a>
+  <!-- Header / Hero Section -->
+  <header>
+    <div class="container">
+      <h1>AI Arbitrage Pro</h1>
+      <p>Maximize Your Profits with AI-Driven Ad Arbitrage</p>
+      <a href="#contact" class="btn">Get Started</a>
     </div>
   </header>
-
+  
   <!-- About Section -->
   <section id="about" class="container">
-    <h2>About ArbitrageX</h2>
+    <h2>About AI Arbitrage Pro</h2>
     <p>
-      At ArbitrageX, we specialize in ad, traffic, and search arbitrage. We help you buy low-cost ad inventory and monetize high-value traffic using cutting-edge AI and real-time data analytics to optimize your campaigns.
+      At AI Arbitrage Pro, we leverage cutting-edge AI and real-time data to optimize digital ad campaigns. We buy low-cost ad inventory and monetize premium traffic, helping you maximize ROI with fully automated solutions.
     </p>
-    <img src="https://source.unsplash.com/800x400/?data,technology" alt="Arbitrage Data" class="responsive-image">
   </section>
-
-  <!-- How It Works Section -->
-  <section id="how-it-works" class="container">
-    <h2>How It Works</h2>
-    <div class="features">
-      <div class="card">
-        <h3>Analyze & Purchase</h3>
-        <p>We analyze multiple ad networks to find low-cost, high-potential ad inventory.</p>
-      </div>
-      <div class="card">
-        <h3>Traffic Monetization</h3>
-        <p>Direct traffic to optimized landing pages that convert, maximizing revenue.</p>
-      </div>
+  
+  <!-- Features Section -->
+  <section id="features" class="container">
+    <h2>Our Features</h2>
+    <div class="features-grid">
       <div class="card">
         <h3>AI Optimization</h3>
-        <p>Our AI continuously monitors performance, adjusting bids and placements in real time.</p>
+        <p>Advanced algorithms for precise ad buying and selling strategies.</p>
+      </div>
+      <div class="card">
+        <h3>Traffic Arbitrage</h3>
+        <p>Identify high-potential traffic and turn it into revenue.</p>
+      </div>
+      <div class="card">
+        <h3>Automation</h3>
+        <p>Streamline campaigns with state-of-the-art automated tools.</p>
       </div>
     </div>
   </section>
-
-  <!-- Results Section -->
-  <section id="results" class="container">
-    <h2>Proven Results</h2>
-    <div class="data-grid">
-      <div class="data-card">
-        <h3>ROI Increase</h3>
-        <p>Up to 150% ROI boost</p>
-      </div>
-      <div class="data-card">
-        <h3>Traffic Growth</h3>
-        <p>300% more traffic</p>
-      </div>
-      <div class="data-card">
-        <h3>Cost Efficiency</h3>
-        <p>70% lower cost per click</p>
-      </div>
-    </div>
-  </section>
-
+  
   <!-- Testimonials Section -->
   <section id="testimonials" class="container">
     <h2>What Our Clients Say</h2>
     <div class="testimonials">
-      <div class="testimonial-card">
-        <img src="https://source.unsplash.com/100x100/?person" alt="Client Photo" class="testimonial-img">
-        <p>"ArbitrageX revolutionized my ad campaigns. The automated optimization and real-time data helped me achieve unprecedented growth!"</p>
-        <h4>John Doe</h4>
+      <div class="testimonial">
+        <p>"AI Arbitrage Pro transformed our ad campaigns – our ROI soared by 200%!"</p>
+        <h4>- Jane Doe</h4>
         <span>Digital Marketer</span>
       </div>
-      <div class="testimonial-card">
-        <img src="https://source.unsplash.com/101x101/?person" alt="Client Photo" class="testimonial-img">
-        <p>"The platform is intuitive and powerful. My ROI increased by 150% within a month. Highly recommended!"</p>
-        <h4>Jane Smith</h4>
+      <div class="testimonial">
+        <p>"The automation features saved us countless hours and boosted profits significantly."</p>
+        <h4>- John Smith</h4>
         <span>Entrepreneur</span>
-      </div>
-      <div class="testimonial-card">
-        <img src="https://source.unsplash.com/102x102/?person" alt="Client Photo" class="testimonial-img">
-        <p>"Thanks to ArbitrageX, our traffic conversion rates have soared. The AI optimization is a game-changer!"</p>
-        <h4>Mike Johnson</h4>
-        <span>Marketing Manager</span>
       </div>
     </div>
   </section>
-
+  
   <!-- Contact Section -->
-  <section id="contact" class="container">
+  <section id="contact" class="container contact-form">
     <h2>Contact Us</h2>
-    <p>Ready to elevate your ad campaigns? Reach out to us today!</p>
-    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <p>Ready to revolutionize your digital advertising? Reach out today!</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      
       <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 ArbitrageX. All rights reserved.</p>
-      <ul>
-        <li><a href="#privacy">Privacy Policy</a></li>
-        <li><a href="#terms">Terms of Service</a></li>
-      </ul>
-    </div>
+  
+  <!-- Footer Section with Disclaimers -->
+  <footer class="container">
+    <ul>
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#terms">Terms of Use</a></li>
+    </ul>
+    <p>&copy; 2025 AI Arbitrage Pro. All rights reserved.</p>
   </footer>
 </body>
 </html>
