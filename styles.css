@@ -1,15 +1,16 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f9f9f9;
+    color: #333;
     text-align: center;
 }
 
 header {
-    background: #343a40;
+    background: #0056b3;
     color: white;
     padding: 20px;
     font-size: 28px;
@@ -17,15 +18,16 @@ header {
 }
 
 .container {
-    padding: 50px;
+    padding: 40px;
     max-width: 900px;
     margin: auto;
+    text-align: left;
 }
 
 .button {
     display: inline-block;
-    padding: 15px 30px;
-    background: #007bff;
+    padding: 12px 25px;
+    background: #ff6600;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -35,38 +37,28 @@ header {
 }
 
 .button:hover {
-    background: #0056b3;
+    background: #cc5200;
 }
 
 .features {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .card {
     background: white;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     max-width: 280px;
-    text-align: left;
-}
-
-.card h3 {
-    color: #333;
-    font-size: 20px;
-}
-
-.card p {
-    font-size: 16px;
-    color: #555;
+    text-align: center;
 }
 
 footer {
-    background: #343a40;
+    background: #222;
     color: white;
     padding: 20px;
     text-align: center;
@@ -91,5 +83,5 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #f8d210;
+    color: #ff6600;
 }
