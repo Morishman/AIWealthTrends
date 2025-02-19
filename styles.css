@@ -4,63 +4,68 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     text-align: center;
+    color: #333;
 }
 
-.hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header {
+    background: #1a1a1a;
     color: white;
-    text-align: center;
-    position: relative;
+    padding: 30px 20px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
+.container {
+    padding: 50px;
+    max-width: 900px;
+    margin: auto;
 }
 
-.cta-button {
+.button {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 15px 35px;
     background: #ff6600;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: background 0.3s;
 }
 
-.grid {
+.button:hover {
+    background: #cc5200;
+}
+
+.features {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
-    padding: 40px 0;
+    margin-top: 40px;
 }
 
-.feature {
+.card {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    transition: transform 0.3s;
 }
 
-.feature img {
-    width: 100%;
-    border-radius: 10px;
+.card:hover {
+    transform: translateY(-5px);
 }
 
 footer {
-    background: #222;
+    background: #1a1a1a;
     color: white;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
+    margin-top: 50px;
 }
 
 footer ul {
@@ -70,10 +75,16 @@ footer ul {
 
 footer ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 footer ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ff6600;
 }
