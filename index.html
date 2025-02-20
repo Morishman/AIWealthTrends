@@ -4,9 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Arbitrage Pro</title>
+  
+  <!-- Cookiebot Consent Banner Script -->
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="cf911299-c417-4ecd-aaab-ae0ec37f4ff7" type="text/javascript" async></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics / Ads Conversion Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFML6YMWQF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    
+    // Set default consent mode: Denied by default
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied'
+    });
+    
+    gtag('config', 'G-LFML6YMWQF');
+    
+    // Example function to update consent based on user choice from Cookiebot
+    function updateConsent(consentStatus) {
+      if(consentStatus === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted'
+        });
+      } else {
+        gtag('consent', 'update', {
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied'
+        });
+      }
+    }
+    
+    // Listen for Cookiebot's consent declaration event
+    window.addEventListener('CookieConsentDeclaration', function() {
+      // For example, check if the user consented to statistics cookies:
+      var consentGiven = Cookiebot.consent.statistics; // true if consent granted, false if not
+      updateConsent(consentGiven ? 'granted' : 'denied');
+    });
+  </script>
+  
+  <!-- Link to your CSS -->
   <link rel="stylesheet" href="styles.css">
-  <!-- Optionally include Animate.css for extra animation effects -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   <!-- Header / Hero Section -->
@@ -18,12 +59,13 @@
     </div>
   </header>
   
-  <!-- About Section -->
-  <section id="about" class="container">
-    <h2>About AI Arbitrage Pro</h2>
-    <p>
-      At AI Arbitrage Pro, we leverage cutting-edge AI and real-time data to optimize digital ad campaigns. We buy low-cost ad inventory and monetize premium traffic, helping you maximize ROI with fully automated solutions.
-    </p>
+  <!-- Hero / Introduction Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Leverage AI for Smarter Advertising</h2>
+      <p>Automated tools to optimize ad performance and increase ROI.</p>
+      <a href="#contact" class="btn">Learn More</a>
+    </div>
   </section>
   
   <!-- Features Section -->
@@ -32,15 +74,15 @@
     <div class="features-grid">
       <div class="card">
         <h3>AI Optimization</h3>
-        <p>Advanced algorithms for precise ad buying and selling strategies.</p>
+        <p>Enhance ad campaigns with AI-driven insights.</p>
       </div>
       <div class="card">
         <h3>Traffic Arbitrage</h3>
-        <p>Identify high-potential traffic and turn it into revenue.</p>
+        <p>Maximize ad spend efficiency and boost profits.</p>
       </div>
       <div class="card">
         <h3>Automation</h3>
-        <p>Streamline campaigns with state-of-the-art automated tools.</p>
+        <p>Streamline operations with intelligent automation.</p>
       </div>
     </div>
   </section>
@@ -50,12 +92,12 @@
     <h2>What Our Clients Say</h2>
     <div class="testimonials">
       <div class="testimonial">
-        <p>"AI Arbitrage Pro transformed our ad campaigns – our ROI soared by 200%!"</p>
+        <p>"AI Arbitrage Pro helped us double our ad revenue in just 3 months!"</p>
         <h4>- Jane Doe</h4>
         <span>Digital Marketer</span>
       </div>
       <div class="testimonial">
-        <p>"The automation features saved us countless hours and boosted profits significantly."</p>
+        <p>"The automation tools are a game-changer for our marketing team."</p>
         <h4>- John Smith</h4>
         <span>Entrepreneur</span>
       </div>
@@ -80,7 +122,7 @@
     </form>
   </section>
   
-  <!-- Footer Section with Disclaimers -->
+  <!-- Footer Section -->
   <footer class="container">
     <ul>
       <li><a href="#privacy">Privacy Policy</a></li>
